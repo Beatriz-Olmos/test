@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos</title>
+
+    <!-- Estilos CSS Externos -->
+    <link rel="stylesheet" href="css/contacto.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav></nav>
+    <header></header>
+
+    <main>
+        <h1>Contáctenos</h1>
+        <address>
+            Av. Rosales 123 - Adrogue - Buenos Aires <br> Teléfono: (011) 4243-1234 | Email: consultas@dominio.com <br>
+            Horario de atención: Lunes a viernes de 9 a 18.
+        </address>
+
+        <form action="php/enviar-ok.php" method="post" autocomplete="off">
+            <label for="nc">Nombre y Apellido:</label>
+            <input type="text" name="nombres" id="nc" minlength="2" maxlength="20">
+
+            <label for="">Domicilio:
+                <input type="text" name="calle" placeholder="Calle + número + localidad + provincia">
+            </label>
+
+            <label for="">E-mail:</label>            
+            <input type="email" name="mail" required>
+
+
+            <label for="">Edad (18 a 65):</label>
+            <input type="number" name="edad" min="18" max="65">
+
+            <label for="">Teléfono:</label>
+            <input type="tel" name="tel" placeholder="Ejemplo: (011) 4444-1234">
+
+
+            <label for="mens">Escribí tu mensaje:</label>
+            <textarea name="mensaje" id="mens"></textarea>
+
+
+            <input type="submit" value="ENVIAR MENSAJE">
+
+
+        </form>
+        
+
+    </main>
+
+    <footer></footer>
+    
+</body>
+</html>
